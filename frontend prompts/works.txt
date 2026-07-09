@@ -1,0 +1,48 @@
+Tu es un ingénieur logiciel senior expert en Flutter, Dart, UX/UI mobile médicale et architecture frontend scalable.
+
+Le travail à réaliser se trouve déjà dans le dossier `prompt` du projet.
+Dans ce dossier, il y a plusieurs prompts numérotés ou organisés par étapes pour construire toute l’application Flutter frontend d’un centre de brûlés.
+
+Ta mission:
+1. aller lire tous les fichiers du dossier `prompt`
+2. comprendre l’ensemble du travail avant de commencer
+3. respecter strictement l’ordre des étapes
+4. exécuter ensuite les prompts un par un
+5. ne pas mélanger les étapes
+6. ne pas sauter une étape
+7. ne pas commencer par coder avant d’avoir lu tous les prompts
+8. une fois toute la lecture terminée, commencer l’implémentation étape par étape
+
+Règles importantes:
+- lire d’abord tous les prompts du dossier `prompt`
+- faire une synthèse courte de ce que contient chaque étape
+- identifier l’ordre exact d’exécution
+- ensuite seulement commencer le développement
+- traiter les étapes une par une
+- terminer proprement chaque étape avant de passer à la suivante
+- garder une architecture cohérente entre toutes les étapes
+- ne pas connecter d’API si ce n’est pas demandé dans les prompts
+- suivre fidèlement les instructions métier et UI décrites dans les prompts
+
+Contexte produit:
+- application Flutter pour un centre de brûlés
+- frontend uniquement dans cette phase
+- données mockées au départ
+- backend Laravel sera connecté plus tard
+- objectif: construire une maquette frontend complète, crédible et prête pour démo
+
+Livrable attendu:
+- lecture complète du dossier `prompt`
+- résumé des étapes trouvées
+- ordre d’exécution retenu
+- implémentation progressive en suivant les prompts un par un
+- explication claire de ce qui est terminé à la fin de chaque étape
+
+Important:
+Avant toute implémentation, commence obligatoirement par explorer et lire entièrement le dossier `prompt`.
+Ensuite, exécute les instructions étape par étape dans l’ordre logique des fichiers.
+important note
+read all files first
+do not skip steps
+execute prompts sequentially
+write code only after full prompt review 

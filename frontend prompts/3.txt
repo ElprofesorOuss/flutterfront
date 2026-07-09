@@ -1,0 +1,128 @@
+Tu es un ingénieur Flutter senior expert en UI mobile médicale.
+
+Je veux maintenant créer tous les écrans principaux de l’application Flutter frontend pour un centre de brûlés, sans API, avec navigation fonctionnelle et données mockées locales.
+
+Objectif:
+Construire la maquette fonctionnelle complète de l’application mobile.
+
+Écrans à créer:
+1. Splash screen
+2. Login mock
+3. Dashboard principal
+4. Liste des patients hospitalisés
+5. Détail patient
+6. Détail hospitalisation
+7. Galerie photos de plaies
+8. Détail photo / comparaison évolution
+9. Alertes de gravité
+10. Trajectoire patient
+11. Nutrition du brûlé
+12. Observations médicales
+13. Notifications
+14. Profil utilisateur
+
+Contrainte importante:
+- aucun backend
+- aucune API
+- navigation complète
+- écrans réalistes
+- données mockées crédibles
+- app pensée pour le workflow médecin brûlés
+
+Détail attendu de certains écrans:
+
+Dashboard:
+- patients hospitalisés
+- alertes critiques
+- patients à revoir
+- accès rapide aux modules
+- résumé clinique du jour
+
+Liste patients:
+- recherche
+- filtres
+- cartes patients
+- badge gravité
+- IPP
+- âge
+- lit
+- TBSA
+- statut
+- accès détail
+
+Détail patient:
+- identité
+- admission active
+- résumé brûlure
+- zones atteintes
+- alertes
+- photos récentes
+- raccourcis modules
+
+Détail hospitalisation:
+- date admission
+- mécanisme de brûlure
+- TBSA
+- inhalation
+- profondeur
+- lit
+- statut clinique
+- résumé timeline
+
+Galerie photos:
+- grille
+- filtrage
+- détail photo
+- comparaison avant/après mockée
+
+Alertes:
+- score gravité
+- niveau
+- liste critères déclenchés
+- affichage couleur fort et clinique
+
+Trajectoire:
+- admission
+- réanimation
+- bloc
+- pansement
+- greffe
+- rééducation
+- sortie
+- suivi ambulatoire
+
+Nutrition:
+- poids
+- taille
+- besoins
+- protéines
+- voie nutritionnelle
+- suivi synthétique
+
+Observations:
+- liste chronologique
+- auteur
+- heure
+- catégorie
+- criticité
+- note clinique
+
+Notifications:
+- nouvelle photo
+- alerte grave
+- pansement à revoir
+- patient critique
+
+Je veux:
+- navigation fluide
+- structure cohérente
+- UI homogène
+- composants réutilisés
+- états vides réalistes
+- données partout pour une vraie démo
+
+À la fin:
+- résume les écrans créés
+- explique la navigation
+- explique comment brancher plus tard chaque écran à l’API Laravel
+- implémente directement le code

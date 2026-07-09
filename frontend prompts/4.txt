@@ -1,0 +1,73 @@
+Tu es un ingénieur Flutter senior expert en architecture frontend et mock data design.
+
+Je veux maintenant finaliser mon application Flutter frontend avec toutes les données mockées, modèles, fake repositories et logique locale de démonstration, sans API réelle.
+
+Objectif:
+Rendre la maquette Flutter totalement navigable et crédible avec de vraies données fictives réalistes pour un centre de brûlés.
+
+Je veux que tu crées:
+1. les modèles Dart
+2. les enums utiles
+3. les fake repositories
+4. les données mockées réalistes
+5. les providers / state management local
+6. les cas de navigation entre écrans
+7. les interactions mockées
+
+Modèles attendus:
+- User
+- Patient
+- Hospitalisation
+- BurnSeverityAlert
+- WoundPhoto
+- ClinicalObservation
+- NutritionSummary
+- TrajectoryStep
+- AppNotification
+
+Les données mockées doivent être réalistes:
+- noms patients
+- IPP
+- âges
+- TBSA
+- niveaux de gravité
+- photos mockées
+- mécanismes de brûlure
+- inhalation
+- nutrition
+- étapes de trajectoire
+- observations critiques ou non
+
+Fonctions mockées attendues:
+- login simulé
+- chargement liste patients
+- recherche locale
+- filtres locaux
+- consultation détail patient
+- consultation détail hospitalisation
+- lecture galerie photo
+- affichage alertes
+- lecture notifications
+- changement d’onglet / navigation
+- rafraîchissement simulé
+- états loading simulés si utile
+
+Architecture:
+- séparer modèles, mocks, repositories, UI
+- préparer des interfaces qui pourront être remplacées plus tard par de vrais services API
+- garder une logique propre et simple
+
+Je veux aussi:
+- quelques scénarios de démonstration:
+  - patient stable
+  - patient sévère
+  - patient critique
+  - patient avec inhalation
+  - patient avec photos d’évolution
+  - patient en phase greffe / rééducation
+
+À la fin:
+- explique comment les mocks sont organisés
+- explique comment remplacer plus tard les fake repositories par des services API Laravel
+- vérifie la cohérence globale du frontend
+- implémente directement tout le code nécessaire

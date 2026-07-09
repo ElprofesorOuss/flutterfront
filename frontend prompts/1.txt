@@ -1,0 +1,59 @@
+Tu es un ingénieur logiciel senior expert en Flutter, Dart, architecture mobile scalable et applications médicales.
+
+Je veux créer une application Flutter pour un centre de brûlés.
+Pour cette étape, je veux uniquement préparer l’architecture frontend du projet, sans API, sans backend connecté, avec données mockées plus tard.
+
+Objectif:
+Créer le squelette du projet Flutter frontend avec une architecture propre, maintenable et prête à être connectée plus tard à une API Laravel.
+
+Contraintes:
+- Flutter frontend uniquement
+- aucune API
+- aucune connexion backend
+- architecture par features
+- code propre et évolutif
+- projet prêt pour une future intégration avec Laravel
+- structure pensée pour une application médicale utilisée par des médecins
+
+Je veux que tu crées:
+1. l’arborescence du projet
+2. les dossiers principaux
+3. les points d’entrée
+4. la structure de navigation
+5. les couches de base
+6. les interfaces mock/repository prêtes pour plus tard
+
+Structure souhaitée, ou une meilleure si tu juges plus propre:
+- lib/core/
+- lib/features/
+- lib/shared/
+- lib/mock/
+- lib/app/
+- lib/main.dart
+
+Je veux une architecture feature-first, par exemple:
+- auth
+- dashboard
+- patients
+- hospitalisations
+- wounds_photos
+- alerts
+- trajectory
+- nutrition
+- observations
+- profile
+- notifications
+
+Préparer aussi:
+- routes/app_router
+- thème global
+- constantes UI
+- modèles de base
+- fake repositories
+- composants réutilisables de base
+
+À la fin:
+- explique l’architecture choisie
+- explique pourquoi elle est adaptée à une future app connectée à Laravel
+- montre la structure finale du projet
+- implémente directement le code

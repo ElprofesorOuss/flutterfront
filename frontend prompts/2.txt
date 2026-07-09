@@ -1,0 +1,71 @@
+Tu es un expert Flutter et mobile product design pour applications médicales.
+
+Je veux maintenant construire le design system complet de mon application Flutter pour un centre de brûlés, toujours sans API et sans backend.
+
+Objectif:
+Créer une identité visuelle médicale professionnelle, sobre, moderne et crédible pour une démonstration hospitalière.
+
+Contexte:
+- app mobile pour médecins et soignants
+- centre de brûlés
+- consultation patient
+- suivi des plaies
+- alertes cliniques
+- trajectoire du patient
+- nutrition
+- observations
+- photos médicales
+
+Je veux que tu construises:
+1. le thème global Flutter
+2. la palette de couleurs
+3. la typographie
+4. les styles de cartes
+5. les styles de badges de gravité
+6. les composants UI de base
+7. les styles d’alertes cliniques
+8. les styles de timeline
+9. les styles de listes patients
+10. les états vides / loading mock
+
+Contraintes design:
+- style médical premium
+- lisibilité excellente
+- contraste fort
+- pas de style générique
+- badges gravité bien visibles
+- cartes patient très lisibles
+- design crédible pour directeur / staff hospitalier
+- UI pensée pour usage rapide au lit du patient
+
+Je veux au minimum ces composants:
+- App scaffold principal
+- section header
+- patient card
+- severity badge
+- alert card
+- metric tile
+- quick action button
+- photo thumbnail card
+- timeline item
+- filter/search bar
+- empty state widget
+
+Je veux aussi:
+- couleurs de gravité:
+  - faible
+  - modérée
+  - sévère
+  - critique
+- système cohérent de spacing, radius, shadows, chips, cards, buttons
+
+Livrable:
+- code complet du thème Flutter
+- composants partagés stylés
+- design system cohérent
+- exemples d’utilisation dans quelques écrans de démo
+
+À la fin:
+- explique les choix UI
+- explique comment garder la cohérence visuelle dans toutes les features
+- implémente directement le code
