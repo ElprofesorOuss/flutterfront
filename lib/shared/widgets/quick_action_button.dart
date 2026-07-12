@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:burning2026/core/theme/app_theme.dart';
+import 'package:burning2026/core/theme/app_colors.dart';
 
 class QuickActionButton extends StatelessWidget {
   final IconData icon;
@@ -17,6 +18,7 @@ class QuickActionButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final colors = context.appColors;
     return InkWell(
       borderRadius: BorderRadius.circular(12),
       onTap: onTap,
@@ -34,7 +36,7 @@ class QuickActionButton extends StatelessWidget {
             const SizedBox(height: 4),
             Text(
               label,
-              style: const TextStyle(fontSize: 10, color: AppTheme.textSecondary),
+              style: TextStyle(fontSize: 10, color: colors.textSecondary),
               textAlign: TextAlign.center,
               maxLines: 2,
               overflow: TextOverflow.ellipsis,

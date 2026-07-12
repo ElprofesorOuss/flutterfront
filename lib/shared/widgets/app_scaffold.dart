@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:burning2026/core/theme/app_theme.dart';
+import 'package:burning2026/core/theme/app_colors.dart';
 
 class AppScaffold extends StatelessWidget {
   final String title;
@@ -21,8 +21,9 @@ class AppScaffold extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final colors = context.appColors;
     return Scaffold(
-      backgroundColor: backgroundColor ?? AppTheme.surfaceColor,
+      backgroundColor: backgroundColor ?? colors.surface,
       appBar: AppBar(
         title: Text(title),
         leading: showBack

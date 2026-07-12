@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:burning2026/core/theme/app_theme.dart';
+import 'package:burning2026/core/theme/app_colors.dart';
 
 class MetricTile extends StatelessWidget {
   final String label;
@@ -19,6 +20,7 @@ class MetricTile extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final colors = context.appColors;
     return Card(
       margin: EdgeInsets.zero,
       child: Padding(
@@ -45,7 +47,7 @@ class MetricTile extends StatelessWidget {
                 Text(
                   value,
                   style: Theme.of(context).textTheme.headlineMedium?.copyWith(
-                        color: valueColor ?? AppTheme.textPrimary,
+                        color: valueColor ?? colors.textPrimary,
                         fontSize: 22,
                       ),
                 ),

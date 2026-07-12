@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:burning2026/core/theme/app_theme.dart';
+import 'package:burning2026/core/theme/app_colors.dart';
 
 class PhotoThumbnailCard extends StatelessWidget {
   final String label;
@@ -17,6 +18,7 @@ class PhotoThumbnailCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final colors = context.appColors;
     return InkWell(
       borderRadius: BorderRadius.circular(8),
       onTap: onTap,
@@ -40,12 +42,12 @@ class PhotoThumbnailCard extends StatelessWidget {
             const SizedBox(height: 4),
             Text(
               label,
-              style: const TextStyle(fontSize: 9, color: AppTheme.textSecondary),
+              style: TextStyle(fontSize: 9, color: colors.textSecondary),
               textAlign: TextAlign.center,
             ),
             Text(
               date,
-              style: const TextStyle(fontSize: 8, color: AppTheme.textLight),
+              style: TextStyle(fontSize: 8, color: colors.textLight),
             ),
           ],
         ),

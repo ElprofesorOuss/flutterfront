@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:burning2026/core/theme/app_theme.dart';
+import 'package:burning2026/core/theme/app_colors.dart';
 import 'package:burning2026/shared/widgets/severity_badge.dart';
 
 class PatientCard extends StatelessWidget {
@@ -81,14 +82,15 @@ class PatientCard extends StatelessWidget {
   }
 
   Widget _infoChip(BuildContext context, IconData icon, String label) {
+    final colors = context.appColors;
     return Row(
       mainAxisSize: MainAxisSize.min,
       children: [
-        Icon(icon, size: 12, color: AppTheme.textSecondary),
+        Icon(icon, size: 12, color: colors.textSecondary),
         const SizedBox(width: 2),
         Text(label,
-            style: const TextStyle(
-                fontSize: 11, color: AppTheme.textSecondary)),
+            style: TextStyle(
+                fontSize: 11, color: colors.textSecondary)),
       ],
     );
   }

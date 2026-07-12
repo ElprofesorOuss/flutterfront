@@ -1,6 +1,6 @@
 class ApiConstants {
   ApiConstants._();
 
-  static const String baseUrl = 'https://api.burncenter2026.laravel/api';
+  static const String baseUrl = 'http://192.168.1.88:8000/api';
   static const Duration timeout = Duration(seconds: 30);
 }

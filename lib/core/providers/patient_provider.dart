@@ -1,21 +1,20 @@
 import 'package:flutter/foundation.dart';
-import 'package:burning2026/core/models/patient.dart';
-import 'package:burning2026/mock/repositories/patient_repository_impl.dart';
+import 'package:burning2026/mock/data/mock_patients.dart';
 
 class PatientProvider extends ChangeNotifier {
-  final FakePatientRepository _repository = FakePatientRepository();
-  List<Patient> _patients = [];
-  Patient? _selectedPatient;
+  List<Map<String, dynamic>> _patients = [];
+  Map<String, dynamic>? _selectedPatient;
   bool _loading = false;
 
-  List<Patient> get patients => _patients;
-  Patient? get selectedPatient => _selectedPatient;
+  List<Map<String, dynamic>> get patients => _patients;
+  Map<String, dynamic>? get selectedPatient => _selectedPatient;
   bool get loading => _loading;
 
   Future<void> loadAll() async {
     _loading = true;
     notifyListeners();
-    _patients = await _repository.getAll();
+    await Future.delayed(const Duration(milliseconds: 600));
+    _patients = List.from(MockPatients.list);
     _loading = false;
     notifyListeners();
   }
@@ -23,7 +22,12 @@ class PatientProvider extends ChangeNotifier {
   Future<void> loadById(String id) async {
     _loading = true;
     notifyListeners();
-    _selectedPatient = await _repository.getById(id);
+    await Future.delayed(const Duration(milliseconds: 400));
+    try {
+      _selectedPatient = MockPatients.list.firstWhere((p) => p['id'] == id);
+    } catch (_) {
+      _selectedPatient = null;
+    }
     _loading = false;
     notifyListeners();
   }
@@ -31,7 +35,12 @@ class PatientProvider extends ChangeNotifier {
   Future<void> search(String query) async {
     _loading = true;
     notifyListeners();
-    _patients = await _repository.search(query);
+    await Future.delayed(const Duration(milliseconds: 300));
+    _patients = MockPatients.list
+        .where((p) =>
+            p['nom']!.toLowerCase().contains(query.toLowerCase()) ||
+            p['ipp']!.toLowerCase().contains(query.toLowerCase()))
+        .toList();
     _loading = false;
     notifyListeners();
   }

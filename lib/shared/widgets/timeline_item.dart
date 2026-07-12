@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:burning2026/core/theme/app_theme.dart';
+import 'package:burning2026/core/theme/app_colors.dart';
 
 class TimelineItem extends StatelessWidget {
   final String title;
@@ -23,6 +24,7 @@ class TimelineItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final colors = context.appColors;
     return IntrinsicHeight(
       child: Row(
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -37,7 +39,7 @@ class TimelineItem extends StatelessWidget {
                     height: 12,
                     color: isActive
                         ? AppTheme.primaryColor.withValues(alpha: 0.3)
-                        : AppTheme.textLight.withValues(alpha: 0.3),
+                        : colors.textLight.withValues(alpha: 0.3),
                   ),
                 Container(
                   width: 24,
@@ -45,20 +47,20 @@ class TimelineItem extends StatelessWidget {
                   decoration: BoxDecoration(
                     color: isActive
                         ? AppTheme.primaryColor
-                        : AppTheme.textLight.withValues(alpha: 0.2),
+                        : colors.textLight.withValues(alpha: 0.2),
                     shape: BoxShape.circle,
                   ),
                   child: Icon(
                     icon,
                     size: 14,
-                    color: isActive ? Colors.white : AppTheme.textLight,
+                    color: isActive ? Colors.white : colors.textLight,
                   ),
                 ),
                 if (!isLast)
                   Expanded(
                     child: Container(
                       width: 2,
-                      color: AppTheme.textLight.withValues(alpha: 0.3),
+                      color: colors.textLight.withValues(alpha: 0.3),
                     ),
                   ),
               ],
@@ -75,8 +77,8 @@ class TimelineItem extends StatelessWidget {
                     title,
                     style: Theme.of(context).textTheme.titleMedium?.copyWith(
                           color: isActive
-                              ? AppTheme.textPrimary
-                              : AppTheme.textSecondary,
+                              ? colors.textPrimary
+                              : colors.textSecondary,
                           fontWeight:
                               isActive ? FontWeight.w600 : FontWeight.normal,
                         ),

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:burning2026/core/theme/app_theme.dart';
+import 'package:burning2026/core/theme/app_colors.dart';
 
 class FilterSearchBar extends StatelessWidget {
   final TextEditingController controller;
@@ -19,6 +19,7 @@ class FilterSearchBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final colors = context.appColors;
     return Padding(
       padding: const EdgeInsets.symmetric(horizontal: 16, vertical: 8),
       child: Row(
@@ -29,10 +30,10 @@ class FilterSearchBar extends StatelessWidget {
               onChanged: onChanged,
               decoration: InputDecoration(
                 hintText: hintText,
-                hintStyle: const TextStyle(color: AppTheme.textLight),
-                prefixIcon: const Icon(Icons.search, color: AppTheme.textLight),
+                hintStyle: TextStyle(color: colors.textLight),
+                prefixIcon: Icon(Icons.search, color: colors.textLight),
                 filled: true,
-                fillColor: Colors.white,
+                fillColor: colors.card,
                 contentPadding:
                     const EdgeInsets.symmetric(horizontal: 16, vertical: 12),
                 border: OutlineInputBorder(
@@ -46,12 +47,12 @@ class FilterSearchBar extends StatelessWidget {
             const SizedBox(width: 8),
             Container(
               decoration: BoxDecoration(
-                color: Colors.white,
+                color: colors.card,
                 borderRadius: BorderRadius.circular(12),
               ),
               child: IconButton(
                 icon: const Icon(Icons.filter_list),
-                color: AppTheme.textSecondary,
+                color: colors.textSecondary,
                 onPressed: onFilterTap,
               ),
             ),
@@ -60,9 +61,9 @@ class FilterSearchBar extends StatelessWidget {
             const SizedBox(width: 8),
             Text(
               '$resultCount résultats',
-              style: const TextStyle(
+              style: TextStyle(
                 fontSize: 12,
-                color: AppTheme.textSecondary,
+                color: colors.textSecondary,
               ),
             ),
           ],

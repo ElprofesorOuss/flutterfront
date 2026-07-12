@@ -5,6 +5,8 @@ class AppNotification {
   final String time;
   final String type;
   final bool isRead;
+  final String patientName;
+  final String? location;
 
   const AppNotification({
     required this.id,
@@ -13,5 +15,7 @@ class AppNotification {
     required this.time,
     required this.type,
     this.isRead = false,
+    this.patientName = '',
+    this.location,
   });
 }

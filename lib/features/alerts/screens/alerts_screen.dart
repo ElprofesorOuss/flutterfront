@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:burning2026/core/constants/severity_colors.dart';
+import 'package:burning2026/core/theme/app_colors.dart';
 import 'package:burning2026/core/theme/app_theme.dart';
 import 'package:burning2026/shared/widgets/alert_card.dart';
 
@@ -9,7 +10,7 @@ class AlertsScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: AppTheme.surfaceColor,
+      backgroundColor: context.appColors.surface,
       appBar: AppBar(title: const Text('Alertes cliniques')),
       body: ListView(
         padding: const EdgeInsets.symmetric(vertical: 8),
